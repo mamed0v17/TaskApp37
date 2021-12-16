@@ -38,7 +38,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         }else {
             binding.textTitle.setBackgroundColor(Color.WHITE);
         }
-        holder.bind(list.get(position),onItemClickListener);
+
     }
 
     @Override

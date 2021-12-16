@@ -1,5 +1,7 @@
 package kg.geektech.taskapp37;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -19,6 +21,8 @@ import kg.geektech.taskapp37.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding binding;
+    private boolean change = false;
+    private boolean changeTwo = true;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,17 +37,46 @@ public class ProfileFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         click();
     }
+
     ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
             new ActivityResultCallback<Uri>() {
                 @Override
+
                 public void onActivityResult(Uri uri) {
-                    binding.gallery.setImageURI(uri);
+                    if (uri == null) {
+                        change = false;
+                    } else {
+
+
+                        binding.gallery.setImageURI(uri);
+                        changeTwo = true;
+                    }
                 }
             });
 
     private void click() {
         binding.gallery.setOnClickListener(view -> {
+            if (change && changeTwo){
+                AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+                builder.setNeutralButton("Поменять", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                   mGetContent.launch("image/*");
+                    }
+                });
+                builder.setPositiveButton("Удалить", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                   binding.gallery.setImageResource(R.drawable.ic_profile);
+                   changeTwo = false;
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }else {
             mGetContent.launch("image/*");
+                change = true;
+                }
         });
     }
 }

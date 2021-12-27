@@ -10,6 +10,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_profile.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_sort.xml" value="0.26153846153846155" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/activity_main.xml" value="0.18518518518518517" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_board.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_dashboard.xml" value="0.24947916666666667" />
@@ -21,6 +22,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/item_board.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/item_news.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/menu/home.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26153846153846155" />
       </map>
     </option>
   </component>

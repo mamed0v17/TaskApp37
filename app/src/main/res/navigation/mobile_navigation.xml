@@ -23,6 +23,11 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
+        android:id="@+id/profileFragment"
+        android:name="kg.geektech.taskapp37.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
         android:id="@+id/newsFragment"
         android:name="kg.geektech.taskapp37.NewsFragment"
         android:label="fragment_news"
@@ -32,9 +37,5 @@
         android:name="kg.geektech.taskapp37.BoardFragment"
         android:label="fragment_board"
         tools:layout="@layout/fragment_board" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="kg.geektech.taskapp37.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+
 </navigation>

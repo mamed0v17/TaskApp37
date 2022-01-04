@@ -37,5 +37,10 @@
         android:name="kg.geektech.taskapp37.BoardFragment"
         android:label="fragment_board"
         tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="kg.geektech.taskapp37.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
 
 </navigation>

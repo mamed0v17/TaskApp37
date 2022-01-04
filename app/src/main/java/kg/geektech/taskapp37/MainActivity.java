@@ -3,6 +3,7 @@ package kg.geektech.taskapp37;
 import android.os.Bundle;
 import android.view.View;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications,R.id.profileFragment)
                 .build();
@@ -46,10 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     binding.navView.setVisibility(View.GONE);
                 }
-                if (destination.getId()== R.id.boardFragment){
+                if (destination.getId()== R.id.boardFragment || destination.getId() ==R.id.imageFragment){
                     getSupportActionBar().hide();
                 }else {
                     getSupportActionBar().show();
+                    getSupportActionBar().setTitle("TaskApp37");
+
                 }
             }
         });

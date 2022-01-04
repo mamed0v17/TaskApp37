@@ -13,11 +13,11 @@ import kg.geektech.taskapp37.interfaces.OnStartClickListener;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> {
     private String[] titles = new String[]{"Добро пожаловать!", "Вас приветствует компания |ММ|", "Грузинские мандарины"};
-    private String[] speech = new String[]{"Мы рады что вы оказались именно тут!!!","Крупнейшия компания в Кыргызстане!","Без косточек!"};
-    private int[] image = new int[]{R.drawable.welcome_image,R.drawable.company_mm,R.drawable.mandariny};
+    private String[] speech = new String[]{"Мы рады что вы оказались именно тут!!!", "Крупнейшия компания в Кыргызстане!", "Без косточек!"};
+    private int[] lottie = new int[]{R.raw.welcomee,R.raw.mm,R.raw.orange};
     private Context context;
-
     private OnStartClickListener clickListener;
+
     @NonNull
     @Override
     public BoardAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -56,11 +56,11 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
 
         public void bind(int position) {
             binding.textTitle.setText(titles[position]);
-            binding.imageView.setImageResource(image[position]);
+            binding.animationView.setAnimation(lottie[position]);
             binding.textDesc.setText(speech[position]);
-            if (position == titles.length - 1 ){
+            if (position == titles.length - 1) {
                 binding.btnStart.setVisibility(View.VISIBLE);
-            }else{
+            } else {
                 binding.btnStart.setVisibility(View.INVISIBLE);
             }
         }

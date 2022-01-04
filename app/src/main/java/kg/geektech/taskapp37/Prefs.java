@@ -34,8 +34,7 @@ public class Prefs {
 
 
     public void saveImage(Uri image) {
-        preferences.edit().putString("isGallery", image.toString()).apply();
-    }
+        preferences.edit().putString("isGallery", image.toString()).apply(); }
 
     public String getImage() {
         return preferences.getString("isGallery", "");
@@ -48,4 +47,14 @@ public class Prefs {
     public boolean isBoardShown() {
         return preferences.getBoolean("isShown", false);
     }
+
+    public String getImageUser(){
+        return  preferences.getString("isEmptyImage","" );
+    }
+
+
+    public void deleteUserImage() {
+        preferences.edit().remove("isEmptyImage").apply();
+    }
 }
+

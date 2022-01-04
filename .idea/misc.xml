@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_add.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_baseline_create_24.xml" value="0.25092592592592594" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22962962962962963" />
@@ -15,7 +16,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_board.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_dashboard.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_home.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_news.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_image.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_news.xml" value="0.29020100502512564" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_notifications.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/fragment_profile.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TaskApp37/app/src/main/res/layout/item_alert_dialog.xml" value="0.24947916666666667" />

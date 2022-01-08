@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".ui.auth.LoginFragment">
+
+    <TextView
+        android:id="@+id/google_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_google"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_google"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AEABAB"
+        android:text="@string/sign_in_via_google" />
+
+    <TextView
+        android:id="@+id/google_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="#05E10E"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/google_email"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="#05E10E"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

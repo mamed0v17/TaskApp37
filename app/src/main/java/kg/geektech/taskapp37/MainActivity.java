@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
         Prefs prefs = new Prefs(this);
+       
+
+        if (FirebaseAuth.getInstance().getCurrentUser() == null)
+        navController.navigate(R.id.loginFragment);
+
+
         if (!prefs.isBoardShown())
         navController.navigate(R.id.boardFragment);
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
@@ -48,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     binding.navView.setVisibility(View.GONE);
                 }
-                if (destination.getId()== R.id.boardFragment || destination.getId() ==R.id.imageFragment){
+                if (destination.getId()== R.id.boardFragment || destination.getId() ==R.id.imageFragment || destination.getId() == R.id.loginFragment){
                     getSupportActionBar().hide();
                 }else {
                     getSupportActionBar().show();
